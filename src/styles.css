@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+.btn-brand {
+  background-color: #00497F;
+  color: #fff;
+}
+.btn-brand:hover{
+  background-color: #003459;
+}
+
+.btn-fb {
+  background-color: #3B5998;
+  color: #ffffff;
+}
+
+.btn-fb:hover {
+  background-color: #2a4271;
+}
+
+html, body {
+  background-color: #001220 !important;
+}
+
+a:hover {
+  cursor: pointer;
+}

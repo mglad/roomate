@@ -1,0 +1,32 @@
+<app-navigation></app-navigation>
+<div class="shell">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center pt-3">
+        <h1 class="display-4">Welcome {{name}}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-2 pt-2">
+        <p class="lead">Please enter some information about yourself</p>
+      </div>
+    </div>
+    <form (submit)="onSubmit(profileForm)" [formGroup]="profileForm">
+      <div class="row">
+        <div class="offset-md-2 col-md-6">
+          <div class="form-group">
+            <label for="displayName">Display name</label>
+            <input id="displayName" type="text" formControlName="displayName" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="description">About me</label>
+            <textarea formControlName="description" class="form-control" id="description"></textarea>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img [src]="profileImg" class="img-thumbnail">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
